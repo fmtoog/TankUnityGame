@@ -2,10 +2,10 @@
 3d tank 2 player game
 Similar in style to tank trouble
 
-1. Tanks
-2. Bullet
-3. Map + lighting
-4. Power-ups
+1. Tanks [G]
+2. Bullet [J]
+3. Map + lighting [R]
+4. Power-ups [T]
 5. Mini-map
 6. Stats - score
 7. Start menu / UI
