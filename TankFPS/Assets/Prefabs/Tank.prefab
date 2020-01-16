@@ -108,7 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5545198756545865159}
   tank: {fileID: 2295567491680107770}
-  ForwardForce: 5
+  speed: 5
+  acceleration: 5
   rotationpower: 1
 --- !u!54 &5545198756545865159
 Rigidbody:
