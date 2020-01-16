@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class FollowPlayer : MonoBehaviour
+public class FollowTank : MonoBehaviour
 {
     //player position
     public Transform player;
@@ -13,5 +13,6 @@ public class FollowPlayer : MonoBehaviour
     {
         // move camera to player position
         transform.position = player.position + offset;
+        transform.LookAt(player);
     }
 }

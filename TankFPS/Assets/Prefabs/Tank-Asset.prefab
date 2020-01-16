@@ -1389,6 +1389,7 @@ GameObject:
   - component: {fileID: 1222595198192277652}
   - component: {fileID: 8366344729146271025}
   - component: {fileID: 2653030805000871954}
+  - component: {fileID: 6330240687305426316}
   m_Layer: 0
   m_Name: Tank-Asset
   m_TagString: Player
@@ -1502,6 +1503,18 @@ MonoBehaviour:
   speed: 5
   acceleration: 5
   rotationpower: 0.2
+--- !u!114 &6330240687305426316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010857196914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: addf54c36a8f74ab4a567f28763b4bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1000010909954248
 GameObject:
   m_ObjectHideFlags: 0
