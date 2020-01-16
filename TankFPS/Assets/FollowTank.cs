@@ -4,6 +4,7 @@ public class FollowTank : MonoBehaviour
 {
     //player position
     public Transform player;
+    public GameObject Tank;
 
     // offset behind player
     public Vector3 offset;
@@ -14,5 +15,8 @@ public class FollowTank : MonoBehaviour
         // move camera to player position
         transform.position = player.position + offset;
         transform.LookAt(player);
+
+        transform.LookAt(player);
     }
+
 }
