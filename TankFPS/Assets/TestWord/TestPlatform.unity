@@ -206,7 +206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364060680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -14.18, z: 0}
   m_LocalScale: {x: 200, y: 1, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
@@ -225,7 +225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011631207874, guid: 445666718d8be644893d1b6b22d653da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3679848
+      value: -6.73
       objectReference: {fileID: 0}
     - target: {fileID: 4000011631207874, guid: 445666718d8be644893d1b6b22d653da, type: 3}
       propertyPath: m_LocalPosition.y
@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011631207874, guid: 445666718d8be644893d1b6b22d653da, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.6217093
+      value: -8.39
       objectReference: {fileID: 0}
     - target: {fileID: 4000011631207874, guid: 445666718d8be644893d1b6b22d653da, type: 3}
       propertyPath: m_LocalRotation.x
@@ -269,6 +269,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 445666718d8be644893d1b6b22d653da, type: 3}
+--- !u!1 &726524070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010857196914, guid: 445666718d8be644893d1b6b22d653da,
+    type: 3}
+  m_PrefabInstance: {fileID: 726524069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &726524071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726524070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b152701249e484a864357f97cf5d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CapCollider: {fileID: 0}
+  TankAtk: {fileID: 0}
+  TankDef: {fileID: 0}
+  rb: {fileID: 0}
+  velocity: 10
 --- !u!4 &772228532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011631207874, guid: 445666718d8be644893d1b6b22d653da,
@@ -359,13 +382,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224566942}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -24.7, y: 35.2, z: -4.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &324439631230845340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -376,7 +399,7 @@ PrefabInstance:
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3679848
+      value: -6.73
       objectReference: {fileID: 0}
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
@@ -386,7 +409,7 @@ PrefabInstance:
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.62171
+      value: -18.39
       objectReference: {fileID: 0}
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
@@ -480,7 +503,7 @@ PrefabInstance:
     - target: {fileID: 3018409642863190812, guid: 7cd6575e1088041f6b13116474d7ba4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3679848
+      value: -6.73
       objectReference: {fileID: 0}
     - target: {fileID: 3018409642863190812, guid: 7cd6575e1088041f6b13116474d7ba4d,
         type: 3}
@@ -490,7 +513,7 @@ PrefabInstance:
     - target: {fileID: 3018409642863190812, guid: 7cd6575e1088041f6b13116474d7ba4d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.62171
+      value: -18.39
       objectReference: {fileID: 0}
     - target: {fileID: 3018409642863190812, guid: 7cd6575e1088041f6b13116474d7ba4d,
         type: 3}
