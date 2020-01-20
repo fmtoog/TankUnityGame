@@ -95,6 +95,7 @@ public class BulletFire : MonoBehaviour
     {
         if (Input.GetKey("f"))
         {
+            //instantiate bullet (properties)
             transform.SetPositionAndRotation(TankAtk.transform.position, TankAtk.transform.rotation);
             //transform.Rotate(90, 0, 0);
             rb.velocity = transform.up * velocity * Time.deltaTime;
