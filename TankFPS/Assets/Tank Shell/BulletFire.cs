@@ -85,10 +85,7 @@ public class BulletFire : MonoBehaviour
 
     void Start()
     {
-        transform.SetPositionAndRotation(TankAtk.transform.position, TankAtk.transform.rotation);
-        transform.Rotate(90, 0, 0);
-        rb.velocity = transform.up * velocity * Time.deltaTime;
-        Invoke("BecomeSolid", 0.5f);
+        
 
 
     }
@@ -96,6 +93,12 @@ public class BulletFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey("f"))
+        {
+            transform.SetPositionAndRotation(TankAtk.transform.position, TankAtk.transform.rotation);
+            //transform.Rotate(90, 0, 0);
+            rb.velocity = transform.up * velocity * Time.deltaTime;
+            Invoke("BecomeSolid", 0.5f);
+        }
     }
 }

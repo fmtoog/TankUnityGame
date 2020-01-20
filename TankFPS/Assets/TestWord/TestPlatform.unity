@@ -267,31 +267,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4595170794991171017, guid: 445666718d8be644893d1b6b22d653da,
+        type: 3}
+      propertyPath: CapCollider
+      value: 
+      objectReference: {fileID: 5012362665253998966, guid: c9c87743c725f394e8d9becb0be0612f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 445666718d8be644893d1b6b22d653da, type: 3}
---- !u!1 &726524070 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000010857196914, guid: 445666718d8be644893d1b6b22d653da,
-    type: 3}
-  m_PrefabInstance: {fileID: 726524069}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &726524071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726524070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42b152701249e484a864357f97cf5d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CapCollider: {fileID: 0}
-  TankAtk: {fileID: 0}
-  TankDef: {fileID: 0}
-  rb: {fileID: 0}
-  velocity: 10
 --- !u!4 &772228532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011631207874, guid: 445666718d8be644893d1b6b22d653da,
@@ -399,22 +382,22 @@ PrefabInstance:
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2669336
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
@@ -429,7 +412,7 @@ PrefabInstance:
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.96371496
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 324439632437962573, guid: 10749073ab6f640a9b76bf2f55c74805,
         type: 3}

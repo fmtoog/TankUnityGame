@@ -1390,6 +1390,7 @@ GameObject:
   - component: {fileID: 8366344729146271025}
   - component: {fileID: 2653030805000871954}
   - component: {fileID: 6330240687305426316}
+  - component: {fileID: 4595170794991171017}
   m_Layer: 0
   m_Name: Tank-Asset
   m_TagString: Player
@@ -1516,6 +1517,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheelRadius: 0.3
+--- !u!114 &4595170794991171017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010857196914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b152701249e484a864357f97cf5d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CapCollider: {fileID: 0}
+  TankAtk: {fileID: 1000010857196914}
+  TankDef: {fileID: 1000010857196914}
+  rb: {fileID: 1222595198192277652}
+  velocity: 10
 --- !u!1 &1000010909954248
 GameObject:
   m_ObjectHideFlags: 0
