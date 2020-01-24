@@ -17,6 +17,15 @@ public class Move : MonoBehaviour
     public float acceleration = 5f;
     public float rotationpower = 0.2f;
     private bool lastshift;
+    public bool player1 = true;
+
+    private KeyCode forward = KeyCode.UpArrow;
+    private KeyCode backwards = KeyCode.DownArrow;
+    private KeyCode left = KeyCode.LeftArrow;
+    private KeyCode right = KeyCode.RightArrow;
+    private KeyCode tleft = KeyCode.Comma;
+    private KeyCode tright = KeyCode.Period;
+    private KeyCode fire = KeyCode.Slash;
 
     // Start is called before the first frame update
     void Start()
@@ -25,13 +34,24 @@ public class Move : MonoBehaviour
         {
             lastshift = true;
         }
+
+        if (player1 == true)
+        {
+            forward = KeyCode.W;
+            backwards = KeyCode.S;
+            left = KeyCode.A;
+            right = KeyCode.D;
+            tleft = KeyCode.Q;
+            tright = KeyCode.E;
+            fire = KeyCode.F;
+        }
     }
 
     // Update is called once per frame
     // FixedUpdate becaused it is used to interact with physics
     void FixedUpdate()
     {
-        if (Input.GetKey("w"))
+        if (Input.GetKey(forward))
         //forwards / backwards movement
         //https://learn.unity.com/tutorial/tank-creation-and-control?language=en&projectId=5c5149c5edbc2a001fd5be95#5c7f8528edbc2a002053b399
         {
@@ -42,7 +62,7 @@ public class Move : MonoBehaviour
 
         }
 
-        if (Input.GetKey("s"))
+        if (Input.GetKey(backwards))
         {
             Vector3 movement = -transform.forward * speed * Time.deltaTime;
 
@@ -52,30 +72,30 @@ public class Move : MonoBehaviour
         }
 
         //go right
-        if (Input.GetKey("d"))
+        if (Input.GetKey(right))
         {
             tank.transform.Rotate(0f, 5f * rotationpower, 0f);
         }
 
         //go left
-        if (Input.GetKey("a"))
+        if (Input.GetKey(left))
         {
             tank.transform.Rotate(0f, -5f * rotationpower, 0f);
         }
 
         //turret right
-        if (Input.GetKey("e"))
+        if (Input.GetKey(tright))
         {
             turret.transform.Rotate(0f, 0f, 1.2f); 
         }
 
         //turret left
-        if (Input.GetKey("q"))
+        if (Input.GetKey(tleft))
         {
             turret.transform.Rotate(0f, 0f, -1.2f);
         }
 
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey("w"))
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.UpArrow))
         {
             if (lastshift == true)
             {
