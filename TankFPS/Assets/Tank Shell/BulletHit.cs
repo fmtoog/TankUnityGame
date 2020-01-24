@@ -11,32 +11,46 @@ public class BulletHit : MonoBehaviour
     public GameObject This;
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Player")
+        if (collision.gameObject == TankAtk)
+        { }
+        else 
         {
-            HitTank(collision);
+
+
+            if (collision.tag == "Player")
+            {
+                HitTank(collision);
+            }
+            else if (collision.tag == "Wall")
+            {
+                HitWall(collision);
+            }
+            else
+            {
+                HitFloor();
+            }
         }
-        else if (collision.tag == "Wall")
-        {
-            HitWall(collision);
-        }
-        else
-        {
-            HitFloor();
-        }
+        
     }
     private void OnCollisionEnter (Collision collision)
+        
     {
-        if (collision.collider.tag == "Player")
-        {
-            HitTank(collision.collider);
-        }
-        else if (collision.collider.tag == "Wall")
-        {
-            HitWall(collision.collider);
-        }
+        if (collision.gameObject == TankAtk)
+        { }
         else
         {
-            HitFloor();
+            if (collision.collider.tag == "Player")
+            {
+                HitTank(collision.collider);
+            }
+            else if (collision.collider.tag == "Wall")
+            {
+                HitWall(collision.collider);
+            }
+            else
+            {
+                HitFloor();
+            }
         }
     }
     private void HitTank(Collider TankHit)
