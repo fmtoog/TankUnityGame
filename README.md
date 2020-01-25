@@ -7,8 +7,8 @@ Similar in style to tank trouble
 # TL
 ## George
 # Dev
-Tom
-Josh
+* Tom
+* Josh
 
 1. Tanks [G]
 2. Bullet [J]
