@@ -31,8 +31,8 @@ public class BulletFire : MonoBehaviour
             {
                 Fired = true;
                 
-                transform.Rotate(90, 0, 0);
-                rb.velocity = transform.up * velocity * Time.deltaTime;
+                //transform.Rotate(90, 0, 0);
+                //rb.velocity = transform.up * velocity * Time.deltaTime;
                 
             }
         }
