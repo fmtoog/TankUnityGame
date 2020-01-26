@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Ruben\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -7,6 +7,13 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="3D Models" t="Include">
+          <e p="Props" t="Include">
+            <e p="Ammunition" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Cinemachine" t="Include">
           <e p="Base" t="Include">
             <e p="Editor" t="Include">
@@ -142,9 +149,14 @@
           <e p="Teleport.cs" t="Include" />
         </e>
         <e p="Move.cs" t="Include" />
+        <e p="Respawn.cs" t="Include" />
+        <e p="Respawn2.cs" t="Include" />
         <e p="Scenes" t="Include">
           <e p="Spawning.cs" t="Include" />
         </e>
+        <e p="ShootP1.cs" t="Include" />
+        <e p="ShootP2.cs" t="Include" />
+        <e p="Spawn.cs" t="Include" />
         <e p="Tank Shell" t="Include">
           <e p="BulletFire.cs" t="Include" />
           <e p="BulletHit.cs" t="Include" />

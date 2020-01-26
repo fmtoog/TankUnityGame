@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5012362665253998969}
   - component: {fileID: 5012362665253998966}
   - component: {fileID: 5012362665253998967}
-  - component: {fileID: 5012362665253998964}
   - component: {fileID: 5012362665253998965}
   m_Layer: 0
   m_Name: Tank Shell
@@ -69,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -111,23 +111,6 @@ MonoBehaviour:
   Tank1: {fileID: 0}
   Tank2: {fileID: 0}
   This: {fileID: 5012362665253998962}
---- !u!114 &5012362665253998964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5012362665253998962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42b152701249e484a864357f97cf5d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CapCollider: {fileID: 5012362665253998966}
-  TankAtk: {fileID: 0}
-  TankDef: {fileID: 0}
-  rb: {fileID: 5012362665253998965}
-  velocity: 1000
 --- !u!54 &5012362665253998965
 Rigidbody:
   m_ObjectHideFlags: 0

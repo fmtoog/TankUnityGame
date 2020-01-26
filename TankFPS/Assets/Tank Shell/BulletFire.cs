@@ -25,7 +25,7 @@ public class BulletFire : MonoBehaviour
     {
         if (Fired == false)
         {
-            transform.SetPositionAndRotation(TankAtk.transform.position, TankAtk.transform.rotation);
+         //   transform.SetPositionAndRotation(TankAtk.transform.position, TankAtk.transform.rotation);
             
             if (Input.GetKey("f"))
             {
