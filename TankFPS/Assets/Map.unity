@@ -15430,22 +15430,6 @@ MonoBehaviour:
   Spawn2: {fileID: 294510185}
   Spawn3: {fileID: 1203344007}
   Spawn4: {fileID: 665702282}
---- !u!114 &1268669423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268669416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06f5b23155a323042ab53cc63926fde2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Spawn1: {fileID: 1266612452}
-  Spawn2: {fileID: 294510185}
-  Spawn3: {fileID: 1203344007}
-  Spawn4: {fileID: 665702282}
 --- !u!96 &1268669424
 TrailRenderer:
   serializedVersion: 2
@@ -18195,22 +18179,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1075565558}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1465711071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465711064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06f5b23155a323042ab53cc63926fde2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Spawn1: {fileID: 1266612452}
-  Spawn2: {fileID: 294510185}
-  Spawn3: {fileID: 1203344007}
-  Spawn4: {fileID: 665702282}
 --- !u!96 &1465711072
 TrailRenderer:
   serializedVersion: 2
@@ -19532,6 +19500,7 @@ GameObject:
   - component: {fileID: 1582418972}
   - component: {fileID: 1582418971}
   - component: {fileID: 1582418975}
+  - component: {fileID: 1582418976}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -19626,6 +19595,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1582418976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582418970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f5b23155a323042ab53cc63926fde2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spawn1: {fileID: 1266612452}
+  Spawn2: {fileID: 294510185}
+  Spawn3: {fileID: 1203344007}
+  Spawn4: {fileID: 665702282}
+  Player1: {fileID: 1268669416}
+  Player2: {fileID: 1465711064}
 --- !u!1001 &1584654100
 PrefabInstance:
   m_ObjectHideFlags: 0

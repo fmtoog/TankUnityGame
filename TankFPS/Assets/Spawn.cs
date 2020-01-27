@@ -10,9 +10,12 @@ public class Spawn : MonoBehaviour
     public GameObject Spawn2;
     public GameObject Spawn3;
     public GameObject Spawn4;
+    public GameObject Player1;
+    public GameObject Player2;
 
     
-    private int num; 
+    private int num;
+    private int num1; 
     
    
     void Start()
@@ -20,19 +23,23 @@ public class Spawn : MonoBehaviour
         num = Random.Range(1,4);
         if (num == 1)
         {
-            gameObject.transform.position = Spawn1.transform.position;
+            Player1.transform.position = Spawn1.transform.position;
+            Player2.transform.position = Spawn3.transform.position;
         }
         if (num == 2)
         {
-            gameObject.transform.position = Spawn2.transform.position;
+            Player1.transform.position = Spawn2.transform.position;
+            Player2.transform.position = Spawn4.transform.position;
         }
         if (num == 3)
         {
-            gameObject.transform.position = Spawn3.transform.position;
+            Player1.transform.position = Spawn3.transform.position;
+            Player2.transform.position = Spawn1.transform.position;
         }
         if (num == 4)
         {
-            gameObject.transform.position = Spawn4.transform.position;
+            Player1.transform.position = Spawn4.transform.position;
+            Player2.transform.position = Spawn2.transform.position;
         }
         
         

@@ -143,6 +143,7 @@
             </e>
           </e>
         </e>
+        <e p="Destroy.cs" t="Include" />
         <e p="FollowTank.cs" t="Include" />
         <e p="Map Scripts" t="Include">
           <e p="Break.cs" t="Include" />

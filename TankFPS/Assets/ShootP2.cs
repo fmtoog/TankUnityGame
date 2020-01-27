@@ -31,11 +31,20 @@ public class ShootP2 : MonoBehaviour
             Rigidbody Temporary_RigidBody;
             Temporary_RigidBody = Temporary_Bullet_Handler.GetComponent<Rigidbody>();
 
-             
+            for (int i = 0; i < 20; i++)
+            {
+                Temporary_RigidBody.AddForce(0 , 0, Bullet_Speed);    
+            }
             
-            Temporary_RigidBody.velocity = Temporary_RigidBody.transform.TransformDirection(0, 0, Bullet_Speed);
+            
+           
+            
+            
+            
+            
+            //Temporary_RigidBody.velocity = Temporary_RigidBody.transform.TransformDirection(0, 0, Bullet_Speed);
         
-
+            
             Destroy(Temporary_Bullet_Handler, 10.0f);
             
         }
@@ -43,15 +52,7 @@ public class ShootP2 : MonoBehaviour
         
      
     }
-    void OnCollisionEnter(Collision Wall)
-    {
-        if (Wall.gameObject.tag == "Wall") 
-        {
-            Destroy(Temporary_Bullet_Handler);
-            Debug.Log("Hit");
- 
-        }
-    }
+   
     
 }
 

@@ -30,7 +30,10 @@ public class ShootP1 : MonoBehaviour
             Temporary_RigidBody = Temporary_Bullet_Handler.GetComponent<Rigidbody>();
 
              
-            Temporary_RigidBody.velocity = Temporary_RigidBody.transform.TransformDirection(0, 0, Bullet_Speed);
+            for (int i = 0; i < 20; i++)
+            {
+                Temporary_RigidBody.AddForce(0 , 0, Bullet_Speed);    
+            }
 
             Destroy(Temporary_Bullet_Handler, 10.0f);
             
