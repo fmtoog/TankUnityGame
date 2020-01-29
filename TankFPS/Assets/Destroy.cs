@@ -19,7 +19,7 @@ public class Destroy : MonoBehaviour
             if (collision.gameObject.tag == "Player") 
             {
                 Destroy(gameObject);
-                Debug.Log("Hit");
+                //Debug.Log("Hit");
  
             }
         }
