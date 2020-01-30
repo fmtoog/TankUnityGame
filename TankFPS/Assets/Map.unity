@@ -10857,17 +10857,17 @@ PrefabInstance:
     - target: {fileID: 8704221111414886291, guid: d11de03fd6aeb45379327baa382af601,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.5
+      value: 33.160343
       objectReference: {fileID: 0}
     - target: {fileID: 8704221111414886291, guid: d11de03fd6aeb45379327baa382af601,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.2
+      value: 8.8
       objectReference: {fileID: 0}
     - target: {fileID: 8704221111414886291, guid: d11de03fd6aeb45379327baa382af601,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.4
+      value: 22.4
       objectReference: {fileID: 0}
     - target: {fileID: 8704221111414886291, guid: d11de03fd6aeb45379327baa382af601,
         type: 3}
@@ -15916,6 +15916,8 @@ MonoBehaviour:
   Spawn2: {fileID: 294510185}
   Spawn3: {fileID: 1203344007}
   Spawn4: {fileID: 665702282}
+  DistanceControl: {fileID: 1268669416}
+  Player1: {fileID: 1268669416}
   P1kills: 0
   P2text: {fileID: 161561142}
 --- !u!96 &1268669424
@@ -16014,6 +16016,24 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &1268669425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268669416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163bcb73cf0e048b2a1bbe99fb5f2b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance1: 0
+  distance2: 0
+  player1: {fileID: 1441040944}
+  player2: {fileID: 779647205}
+  P1: {fileID: 1268669416}
+  P2: {fileID: 1465711064}
 --- !u!1001 &1275314690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18027,17 +18047,17 @@ PrefabInstance:
     - target: {fileID: 8704221111414886291, guid: d11de03fd6aeb45379327baa382af601,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.5
+      value: 33.160343
       objectReference: {fileID: 0}
     - target: {fileID: 8704221111414886291, guid: d11de03fd6aeb45379327baa382af601,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.2
+      value: 8.8
       objectReference: {fileID: 0}
     - target: {fileID: 8704221111414886291, guid: d11de03fd6aeb45379327baa382af601,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.4
+      value: 22.4
       objectReference: {fileID: 0}
     - target: {fileID: 8704221111414886291, guid: d11de03fd6aeb45379327baa382af601,
         type: 3}
@@ -18789,6 +18809,8 @@ MonoBehaviour:
   Spawn2: {fileID: 294510185}
   Spawn3: {fileID: 1203344007}
   Spawn4: {fileID: 665702282}
+  DistanceControl: {fileID: 1268669416}
+  Player2: {fileID: 1465711064}
   P2kills: 0
   P1text: {fileID: 957637114}
 --- !u!1001 &1468849467

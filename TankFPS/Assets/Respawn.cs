@@ -12,6 +12,11 @@ public class Respawn : MonoBehaviour
     public GameObject Spawn3;
     public GameObject Spawn4;
 
+    //GW
+    public GameObject DistanceControl;
+    public GameObject Player2;
+
+    //GW
     public int P2kills = 0;
     public Text P1text;
 
@@ -58,8 +63,12 @@ public class Respawn : MonoBehaviour
             }
 
             count = 0;
+
+            //GW
             P2kills = P2kills + 1;
             P1text.text = P2kills.ToString();
+            DistanceControl.GetComponent<Distance>().distance1 = 0;
+            Player2.GetComponent<TrailRenderer>().time = Player2.GetComponent<TrailRenderer>().time + 1.5f;
 
         }
         
