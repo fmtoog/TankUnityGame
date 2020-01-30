@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
  //Ruben
 
 public class Respawn2 : MonoBehaviour
@@ -11,6 +12,9 @@ public class Respawn2 : MonoBehaviour
     public GameObject Spawn3;
     public GameObject Spawn4;
 
+    public int P1kills = 0;
+    public Text P2text;
+
     private int count = 0;
     private int num = 0;
 
@@ -18,6 +22,7 @@ public class Respawn2 : MonoBehaviour
     {
         num = UnityEngine.Random.Range(1, 4); 
         Debug.Log(num + "num");
+        P2text.text = "0";
     }
 
 
@@ -53,7 +58,9 @@ public class Respawn2 : MonoBehaviour
                 gameObject.transform.position = Spawn4.transform.position;
             }
 
-            count = 0; 
+            count = 0;
+            P1kills = P1kills + 1;
+            P2text.text = P1kills.ToString();
         }
         
     }

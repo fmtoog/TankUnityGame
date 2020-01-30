@@ -31,9 +31,9 @@ public class ShootP2 : MonoBehaviour
             Rigidbody Temporary_RigidBody;
             Temporary_RigidBody = Temporary_Bullet_Handler.GetComponent<Rigidbody>();
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 2000; i++)
             {
-                Temporary_RigidBody.AddForce(0 , 0, Bullet_Speed);    
+                //Temporary_RigidBody.AddForce(0 , 0, Bullet_Speed);    
             }
             
             
@@ -42,7 +42,7 @@ public class ShootP2 : MonoBehaviour
             
             
             
-            //Temporary_RigidBody.velocity = Temporary_RigidBody.transform.TransformDirection(0, 0, Bullet_Speed);
+            Temporary_RigidBody.velocity = Temporary_RigidBody.transform.TransformDirection(0, 0, Bullet_Speed * 10);
         
             
             Destroy(Temporary_Bullet_Handler, 10.0f);

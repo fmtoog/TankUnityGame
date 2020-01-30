@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
  //Ruben
 
 public class Respawn : MonoBehaviour
@@ -10,6 +11,9 @@ public class Respawn : MonoBehaviour
     public GameObject Spawn2;
     public GameObject Spawn3;
     public GameObject Spawn4;
+
+    public int P2kills = 0;
+    public Text P1text;
 
     private int count = 0;
     private int num = 0;
@@ -53,7 +57,10 @@ public class Respawn : MonoBehaviour
                 gameObject.transform.position = Spawn4.transform.position;
             }
 
-            count = 0; 
+            count = 0;
+            P2kills = P2kills + 1;
+            P1text.text = P2kills.ToString();
+
         }
         
     }
