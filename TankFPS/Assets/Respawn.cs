@@ -15,6 +15,7 @@ public class Respawn : MonoBehaviour
     //GW
     public GameObject DistanceControl;
     public GameObject Player2;
+    public GameObject Pannel;
 
     //GW
     public int P2kills = 0;
@@ -27,8 +28,16 @@ public class Respawn : MonoBehaviour
     {
         num = UnityEngine.Random.Range(1, 4); 
         Debug.Log(num + "num");
+        Pannel.GetComponent<Image>().enabled = false;
     }
 
+    private void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.Z))
+        {
+            count += 2;
+        }
+    }
 
     void OnCollisionEnter(Collision bullet)
     {
@@ -39,6 +48,11 @@ public class Respawn : MonoBehaviour
             Debug.Log("hit" + gameObject);
             Debug.Log(count + "count" + gameObject);
         }
+    }
+
+    private void hide()
+    {
+        Pannel.GetComponent<Image>().enabled = false;
     }
 
     private void Update()
@@ -69,6 +83,8 @@ public class Respawn : MonoBehaviour
             P1text.text = P2kills.ToString();
             DistanceControl.GetComponent<Distance>().distance1 = 0;
             Player2.GetComponent<TrailRenderer>().time = Player2.GetComponent<TrailRenderer>().time + 1.5f;
+            Pannel.GetComponent<Image>().enabled = true;
+            Invoke("hide", 1.5f);
 
         }
         

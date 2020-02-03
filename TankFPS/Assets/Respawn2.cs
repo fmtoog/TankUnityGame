@@ -19,6 +19,7 @@ public class Respawn2 : MonoBehaviour
     //GW
     public int P1kills = 0;
     public Text P2text;
+    public GameObject Pannel;
 
     private int count = 0;
     private int num = 0;
@@ -28,6 +29,7 @@ public class Respawn2 : MonoBehaviour
         num = UnityEngine.Random.Range(1, 4); 
         Debug.Log(num + "num");
         P2text.text = "0";
+        Pannel.GetComponent<Image>().enabled = false;
     }
 
 
@@ -40,6 +42,11 @@ public class Respawn2 : MonoBehaviour
             Debug.Log("hit" + gameObject);
             Debug.Log(count + "count" + gameObject);
         }
+    }
+
+    private void hide()
+    {
+        Pannel.GetComponent<Image>().enabled = false;
     }
 
     private void Update()
@@ -70,6 +77,10 @@ public class Respawn2 : MonoBehaviour
             P2text.text = P1kills.ToString();
             DistanceControl.GetComponent<Distance>().distance2 = 0;
             Player1.GetComponent<TrailRenderer>().time = Player1.GetComponent<TrailRenderer>().time + 1.5f;
+            Pannel.GetComponent<Image>().enabled = true;
+            Invoke("hide", 1.5f);
+
+
         }
         
     }
