@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
-//Ruben
+//Ruben, not used
 public class Break : MonoBehaviour
 {
     public GameObject arch;

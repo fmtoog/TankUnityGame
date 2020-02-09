@@ -3377,7 +3377,7 @@ GameObject:
   - component: {fileID: 294510186}
   m_Layer: 0
   m_Name: Spawn2
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3637,6 +3637,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 133036, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
       propertyPath: m_Name
+      value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 133036, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
+      propertyPath: m_TagString
       value: Portal
       objectReference: {fileID: 0}
     - target: {fileID: 410906, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
@@ -7240,7 +7244,7 @@ GameObject:
   - component: {fileID: 665702283}
   m_Layer: 0
   m_Name: Spawn4
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12348,6 +12352,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010857196914, guid: 445666718d8be644893d1b6b22d653da, type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
     - target: {fileID: 1000010909954248, guid: 445666718d8be644893d1b6b22d653da, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -14608,7 +14616,7 @@ GameObject:
   - component: {fileID: 1203344008}
   m_Layer: 0
   m_Name: Spawn3
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15315,7 +15323,7 @@ GameObject:
   - component: {fileID: 1266612453}
   m_Layer: 0
   m_Name: Spawn1
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16178,6 +16186,10 @@ PrefabInstance:
     - target: {fileID: 133036, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
       propertyPath: m_Name
       value: Portal (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 133036, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
+      propertyPath: m_TagString
+      value: Portal
       objectReference: {fileID: 0}
     - target: {fileID: 410906, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19210,7 +19222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Shooter: {fileID: 1509165016}
   Bullet: {fileID: 173396, guid: e0a33e876d30fd349a7c3195590c9170, type: 3}
-  Bullet_Speed: 100
+  Bullet_Speed: 300
 --- !u!1001 &1568032235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19503,7 +19515,7 @@ GameObject:
   - component: {fileID: 1582418976}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20951,7 +20963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Shooter: {fileID: 767811895}
   Bullet: {fileID: 124846, guid: c08d8e39e38b0bc46b2cade287bd2961, type: 3}
-  Bullet_Speed: 100
+  Bullet_Speed: 700
 --- !u!43 &1700691891
 Mesh:
   m_ObjectHideFlags: 0
@@ -21963,6 +21975,10 @@ PrefabInstance:
     - target: {fileID: 133036, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
       propertyPath: m_Name
       value: Portal (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 133036, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
+      propertyPath: m_TagString
+      value: Portal
       objectReference: {fileID: 0}
     - target: {fileID: 410906, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24206,6 +24222,10 @@ PrefabInstance:
     - target: {fileID: 133036, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
       propertyPath: m_Name
       value: Portal (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 133036, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
+      propertyPath: m_TagString
+      value: Portal
       objectReference: {fileID: 0}
     - target: {fileID: 410906, guid: 2bb4d5732a9e345a9bbed0782fdbe189, type: 3}
       propertyPath: m_LocalPosition.x

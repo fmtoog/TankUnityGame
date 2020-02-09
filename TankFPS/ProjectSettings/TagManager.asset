@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Wall
   - Bullet
+  - Bullet2
+  - Player2
+  - Portal
+  - Plane
+  - Spawn
   layers:
   - Default
   - TransparentFX

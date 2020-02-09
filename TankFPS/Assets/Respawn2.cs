@@ -11,7 +11,7 @@ public class Respawn2 : MonoBehaviour
     public GameObject Spawn3;
     public GameObject Spawn4;
 
-    private int count = 0;
+    public static int count = 0;
     private int num = 0;
 
     private void Start()

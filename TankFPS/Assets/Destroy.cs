@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Ruben, not used
 public class Destroy : MonoBehaviour
 {
  

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
-public class Teleport : MonoBehaviour //ruben
+public class Teleport : MonoBehaviour //ruben & george
 {
     public GameObject end;
     public bool tel;
@@ -27,7 +27,7 @@ public class Teleport : MonoBehaviour //ruben
             startposition = tank.transform.position;
             
          
-            if (tank.transform.tag == "Player")
+            if (tank.transform.tag == "Player" || tank.transform.tag == "Player2")
             {
                 endposition = end.transform.position + displacment;
                 tank.transform.position = endposition;
