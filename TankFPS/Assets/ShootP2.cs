@@ -69,12 +69,14 @@ public class ShootP2 : MonoBehaviour
                 Destroy(hit.transform.gameObject);
             }
 
+
             if (hit.transform.tag == "Player")
             {
                 count += 1; 
                 Debug.Log(count);
             }
  
+
         }
         else
         {
