@@ -16,7 +16,8 @@ public class ShootP2 : MonoBehaviour
     
 
     private static int count;
-
+    public TrailRenderer tr;
+    private Material emmat;
         
     
 
@@ -46,6 +47,12 @@ public class ShootP2 : MonoBehaviour
         {
             Respawn2.count = count;
             count = 0; 
+        }
+        if (count == 1)
+        {
+
+            emmat = tr.material;
+            emmat.SetColor("_EmissionColor", Color.red);
         }
         
        

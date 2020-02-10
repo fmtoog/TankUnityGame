@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -18,8 +19,8 @@ public class ShootP1 : MonoBehaviour
     public float laserMaxLength = 5f;
 
     private static int count;
-
-    
+    public TrailRenderer tr;
+    private Material emmat; 
  
     void Start() {
         Vector3[] initLaserPositions = new Vector3[1] {Shooter.transform.position};
@@ -49,7 +50,13 @@ public class ShootP1 : MonoBehaviour
             Respawn.count = count;
             count = 0; 
         }
-        
+
+        if (count == 1)
+        {
+
+            emmat = tr.material;
+            emmat.SetColor("_EmissionColor", Color.red);
+        }
     }
 
     
