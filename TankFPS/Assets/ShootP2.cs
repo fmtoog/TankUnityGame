@@ -26,6 +26,7 @@ public class ShootP2 : MonoBehaviour
         laserLineRenderer.SetPositions( initLaserPositions );
         laserLineRenderer.positionCount = 2;
         laserLineRenderer.SetWidth( laserWidth, laserWidth );
+        emmat = tr.material;
     }
 
     // Update is called once per frame
@@ -51,10 +52,13 @@ public class ShootP2 : MonoBehaviour
         if (count == 1)
         {
 
-            emmat = tr.material;
+            
             emmat.SetColor("_EmissionColor", Color.red);
         }
-        
+        else
+        {
+            emmat.SetColor("_EmissionColor", Color.cyan); 
+        }
        
     }
     void Shoot()

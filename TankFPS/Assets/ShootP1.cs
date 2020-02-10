@@ -27,6 +27,7 @@ public class ShootP1 : MonoBehaviour
         laserLineRenderer.SetPositions( initLaserPositions );
         laserLineRenderer.positionCount = 2;
         laserLineRenderer.SetWidth( laserWidth, laserWidth );
+        emmat = tr.material;
     }
 
 
@@ -54,8 +55,12 @@ public class ShootP1 : MonoBehaviour
         if (count == 1)
         {
 
-            emmat = tr.material;
+            
             emmat.SetColor("_EmissionColor", Color.red);
+        }
+        else
+        {
+            emmat.SetColor("_EmissionColor", Color.green);  
         }
     }
 
