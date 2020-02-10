@@ -11,6 +11,8 @@ TagManager:
   - Portal
   - Plane
   - Spawn
+  - BreakWall
+  - PowerUp
   layers:
   - Default
   - TransparentFX
