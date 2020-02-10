@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/START SCREEN.unity
+    guid: 5997eec183ca64245aa041562c16528a
+  - enabled: 1
+    path: Assets/Map.unity
+    guid: 50996719d3f4545729ec12adf284f716
+  - enabled: 1
+    path: Assets/Dark Mode.unity
+    guid: 791e47e1de4434e5f8441c6147f4ed7f
   m_configObjects: {}
